@@ -906,6 +906,9 @@
         width: 100%;
         margin-bottom: 30px;
     }
+    .sm-icon {
+    margin: 0 3px;
+    }
 
 }
 
