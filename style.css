@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: var(--color-black);
-    font-weight: 500;
+    font-weight: 400;
 }
   
 :root {
@@ -268,9 +268,9 @@
 .job-box{
     width: 30%;
     background-color: var(--color-white);
-    text-align: center;
+    text-align: left;
     margin: 20px auto;
-    padding: 20px;
+    padding: 20px 30px;
     margin-top: 40px;
     transition: 0.6s;
     
@@ -288,7 +288,7 @@
 }
 
 .job-box hr{
-    width: 80%;
+    width: 100%;
     color: var(--color-black);
     margin: 10px auto;
 }
@@ -314,7 +314,7 @@
     background: url(images/Icon\ material-location-on.png) no-repeat;
     width: 20px;
     height: 20px;
-    margin-left: 6px;
+    margin-left: 0px;
     margin-bottom: -6px;
 }
 .job-ind{
@@ -344,15 +344,21 @@
     margin-bottom: -6px;
 }
 
+.job-info > *::before{
+    margin: 0;
+    vertical-align: middle;
+}
+
 /* Jobs Banner */
 
 .hr-banner{
     background: url(images/Group\ 553.png);
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position: right;
+    background-color: var(--color-black);
     width: 100%;
-    padding-bottom: 40px;
-    padding-top: 20px;
+    padding-bottom: 65px;
+    padding-top: 60px;
     margin-top: 30px;
 }
 
@@ -366,7 +372,6 @@
     color: var(--color-orange);
     font-size: 42px;
     font-weight: 800;
-    margin-top: 50px;
 }
 
 .banner-intro{
@@ -384,7 +389,7 @@
     font-size: 19px;
     text-decoration: none;
     display: inline-block;
-    margin: 20px 20px 20px 0;
+    margin: 20px 20px 0 0;
 }
 
 .btn-banner-white:hover{
@@ -416,7 +421,7 @@
     font-size: 19px;
     text-decoration: none;
     display: inline-block;
-    margin-top: 20px;
+    margin: 20px 20px 0 0;
 
 }
 
@@ -541,11 +546,368 @@
 .mpg-footer{
     display: flex;
     margin-top: 15px;
+    align-items: center;
 }
+
 .mpg-footer img{
     display: block;
     margin-left: 10px;
     max-width: 150px;
 }
+
+/* Hero-empower */
+
+.hero-text{
+    width: 50%;
+    
+}
+
+.hero-empower{
+    display: flex;
+    background-image: url(images/Mask\ Group\ 6.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+    padding-top: 25vh;
+    padding-left: 50px;
+}
+
+.hero-title{
+    font-size: 80px;
+    font-weight: 800;
+    color: var(--color-white);  
+}
+.hero-title span{
+    font-size: 80px;
+    font-weight: 800;
+    color: var(--color-orange);  
+}
+
+.hero-intro{
+    color: var(--color-white);
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.btn-hero{
+    color: var(--color-white);
+    background-color: var(--color-orange);
+    border: solid 1px var(--color-orange);
+    border-radius: 10px;
+    padding: 5px 25px;
+    transition: 0.6s;
+    font-size: 19px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn-hero:hover{
+    color: var(--color-white);
+    border: solid 1px var(--color-white);
+    background-color: transparent;
+}
+
+.hero-icon img{
+    max-width: 500px;
+}
+
+/* About-emp */
+
+.about-empower{
+    background-color: var(--color-gray);
+    padding: 50px 40px;
+    padding-top: 70px;
+}
+
+.about-title{
+    color: var(--color-white);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.about-intro{
+    color: var(--color-white);
+    margin-top: 20px;
+}
+
+
+/* Mentori */
+.mentor-sec{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.mentor-box{
+    width: 30%;
+    background-color: var(--color-white);
+    box-shadow: 11px 10px 15px 5px rgb(0 0 0 / 39%);
+}
+
+.mentor-img img{
+    max-width: 365px;
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.mentor-info{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.mentor-name{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.mentor-position{
+    font-size: 14px;
+}
+
+.mentor-company{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Timovi */
+
+.tim-sec{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.tim-box{
+    width: 30%;
+    background-color: var(--color-white);
+    box-shadow: 11px 10px 15px 5px rgb(0 0 0 / 39%);
+}
+
+.tim-img img{
+    max-width: 365px;
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.tim-info{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.tim-name{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.tim-position{
+    font-size: 14px;
+}
+
+.tim-company{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* Media */
+
+@media screen and (max-width: 1100px){
+    * {
+        font-size: 14px;
+    }
+
+    .inside-m-p {
+        margin: 10px;
+        padding: 0 10px;
+        margin-top: 25px;
+    }
+
+    .inside-header .logo {
+        max-width: 120px;
+        margin: 20px;
+    }
+
+    .inside-header a {
+        width: auto;
+    }
+
+    .main-menu a span{
+        font-size: 25px;
+    }
+    .main-menu a {
+        font-size: 25px;
+    }
+
+   
+
+    .act-sec {
+        flex-direction: column;
+    }
+
+    .act-box {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .job-sec {
+        flex-direction: column;
+    }
+
+    .job-box{
+        width: 100%;
+    }
+
+    .job-info{
+        flex-direction: column;
+        
+    }
+    .job-info *{
+        width: 100%;
+        margin: 5px 0;
+    }
+
+   .hr-banner{
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+   .banner-textbox {
+        margin-left: 10px;
+        width: 90%;
+    }
+
+    .st-par{
+        flex-direction: column;
+    }
+
+    .stp-box{
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .inside-footer{
+        flex-direction: column;
+    }
+
+    .act-title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .act-box {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .act-text {
+        margin: 20px;
+    }
+
+    .act-img {
+        max-width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .title{
+        text-align: center;
+    }
+    .title-box{
+        flex-direction: column;
+        line-height: 25px;
+    }
+
+    .btn-org , .btn-wht{
+        margin-top: 15px;
+    }
+
+    .btn-banner-white, .btn-banner-orang {
+        font-size: 16px;
+    }
+
+    .left-footer {
+        width: 100%;
+    }
+
+    .intro-ftr {
+        text-align: center;
+    }
+
+    .ftmn-top ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ftmn-bot ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .right-footer {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .copyright{
+        text-align: center;
+    }
+
+    .mpg-footer {
+        flex-direction: column;
+    }
+
+    .hero-title {
+        font-size: 40px;
+    }
+    .hero-title span {
+        font-size: 40px;
+    }
+
+    .hero-text {
+        width: auto;
+    }
+    .hero-empower{
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    .hero-icon img {
+        max-width: 210px;
+        margin-top: 30px;
+    }
+
+    .mentor-sec{
+        flex-direction: column;
+    }
+    .tim-sec{
+        flex-direction: column;
+    }
+
+    .mentor-box{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .tim-box{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+}
+
 
 
